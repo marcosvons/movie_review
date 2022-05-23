@@ -1,0 +1,346 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+body{
+  background-color: #bfbfbf;
+  list-style: none;
+}
+div.uk-fkex{
+  margin-bottom: 20px;
+}
+header{
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+div.busqueda{
+  position: relative;
+    top: -12px;
+    margin-right: 2%;
+
+}
+
+
+header div.busqueda input{
+  border-radius: 10px;
+}
+
+nav{
+width: 50%
+}
+
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0px;
+}
+nav ul li {
+  width: 100vw;
+}
+nav ul a{
+  width: 15%;
+  font-size: 12px;
+}
+
+div.header{
+  width: 10%;
+  margin: 1%;
+
+}
+div.logoTMDB {
+  width: 10%;
+  margin: 1%
+}
+
+
+div.uk-position-relative{
+  display: flex;
+}
+
+footer{
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+div.integrantes{
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5%
+}
+
+footer div.integrantes p{
+  margin: 20px 0 20px 0;
+}
+
+footer div.integrantes a {
+  text-decoration: none;
+
+}
+
+/* PAGINA DE INCIO */
+
+h1.titulosincio{
+  background-color: black;
+margin-bottom: 0px;
+margin-top: 0px;
+}
+
+a.uk-icon{
+  border: white solid 0.5px;
+  padding: 10px;
+  color: white;
+}
+
+nav ul button.uk-button {
+  color: white;
+  width: 45%;
+    border-radius: 10px;
+}
+
+a.arriba {
+  width: 30%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+a.abajo {
+  width: 45%;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+      border-radius: 10px;
+}
+
+h1.titulosincio{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+form input {
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+form.buscador {
+  margin-right: 20px;
+}
+
+input.botonbuscador {
+  height: 50px;
+}
+
+/* PAGINA DE DETALLE */
+
+div.series_recomendadas {
+  display: none;
+}
+
+div.contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+    margin-top: 20px;
+}
+
+div.container_detalle_serie{
+  width: 55vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.poster_serie{
+  width: 40vw;
+}
+
+div.titulo_serie{
+  font-weight: bold;
+  font-size: xx-large;
+}
+button.favoritos{
+height: 60px;
+border-radius: 10px;
+margin-top: 20px;
+font-size: 20px;
+background-color: #bfbfbf;
+border: solid black 1px;
+}
+button.favoritos:hover{
+  background-color: white;
+}
+
+div.trailer_serie{
+  margin-top: 10px;
+
+}
+
+button#boton_recomendaciones{
+
+  border-radius: 10px;
+  height: 60px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+  margin-left: 40%;
+  margin-bottom: 20px;
+  background-color: #bfbfbf;
+  border: solid black 1px;
+}
+
+button#boton_recomendaciones:hover{
+  background-color: white;
+}
+div.genero_serie{
+  font-style: italic;
+}
+
+/* PAGINA DE SERIES POR GENEROS */
+
+div#nombreDelGenero{
+
+  font-size:30px;
+  background-color: black;
+
+color: white;
+display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* PAGINA DE RESULTADOS */
+
+h1#lo_buscado {
+  font-weight: normal;
+  font-size:40px;
+  background-color: black;
+  margin-top: 10px;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: white;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/* PAGINA DE BUSCADOR */
+/* PAGINA DE BUSCADOR AVANZADO */
+.uk-form-stacked {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+margin-top: 30px;
+align-items: center;
+align-content: center;
+margin-left: 10px;
+
+}
+
+form div {
+  width: 23vw;
+align-items: center;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+select.generoaño{
+  margin-top: 49px;
+  height: 25px;
+  width: 80px;
+
+}
+
+select.generoorden{
+  margin-top: 49px;
+  height: 25px;
+
+}
+
+select.generodescartado{
+height: 25px;
+
+}
+
+select.generoelegido{
+height: 25px;
+
+
+}
+
+button.buscadoravanzado{
+  width: 350px;
+  margin: auto;
+  margin-top: 90px;
+  margin-bottom: 30px;
+height: 30px;
+border-radius: 10px;
+font-size: 17px;
+
+}
+<<<<<<< Updated upstream
+s
+=======
+
+>>>>>>> Stashed changes
+
+
+/* PAGINA DE FAVORITOS */
+
+ul#seriesFavoritas {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  padding-left: 0px;
+  list-style: none;
+}
+
+ul#seriesFavoritas li {
+  width: 25%;
+  text-decoration: none;
+}
+
+
+/* PAGINA DE FAVORITOS */
+
+h1#muestraseriesfavoritas{
+  background-color: black;
+  color: white;
+  margin: 0px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/*RESPONSIVE*/
