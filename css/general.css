@@ -1,30 +1,29 @@
 * {
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
-
+  font-size: 13px;
 }
 
 body{
-  background-color: #bfbfbf;
+  background-color: black;
   list-style: none;
 }
 div.uk-fkex{
   margin-bottom: 20px;
 }
+
 header{
   background-color: black;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
 }
 
 div.busqueda{
   position: relative;
     top: -12px;
     margin-right: 2%;
-
 }
 
 
@@ -33,7 +32,7 @@ header div.busqueda input{
 }
 
 nav{
-width: 50%
+width: 60%
 }
 
 nav ul{
@@ -41,13 +40,11 @@ nav ul{
   flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 0px;
+  margin: 0;
 }
-nav ul li {
-  width: 100vw;
-}
+
 nav ul a{
   width: 15%;
-  font-size: 12px;
 }
 
 div.header{
@@ -93,42 +90,70 @@ footer div.integrantes a {
 
 }
 
+main {
+  margin-bottom: 20px;
+}
+
 /* PAGINA DE INCIO */
 
 h1.titulosincio{
   background-color: black;
-margin-bottom: 0px;
-margin-top: 0px;
+  margin: 20px;
+  font-size: 2em;
+  display: inline-block;
+  
 }
 
 a.uk-icon{
   border: white solid 0.5px;
   padding: 10px;
   color: white;
+  height: fit-content;
 }
 
 nav ul button.uk-button {
   color: white;
-  width: 45%;
-    border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0px;
+  line-height: normal;
+  font-size: 13px;
+}
+
+div.uk-first-column {
+  width: 100%;
+}
+
+ul.uk-nav li{
+  margin-right: 1em;
+  color: black;
+}
+
+ul.uk-nav li a{
+  color: black;
+}
+
+svg {
+  margin: 0px 5px;
 }
 
 a.arriba {
-  width: 30%;
+  width: fit-content;
   margin-bottom: 10px;
   margin-top: 10px;
   display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
 }
 
 a.abajo {
-  width: 45%;
+  width: fit-content;
   display: flex;
-    align-items: center;
-    justify-content: center;
-      border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 10px 0px;
 }
 
 h1.titulosincio{
@@ -139,17 +164,46 @@ h1.titulosincio{
 }
 
 form input {
-  height: 50px;
-  width: 150px;
+  height: 3em;
+  width: 90%;
   border-radius: 10px;
-  font-size: 15px;
+  font-size: 13px;
+  background: black;
+  text-align: center;
+  color: white;
+  margin-right: 1px;
+  border: 1px solid white;
 }
+
+
 form.buscador {
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 input.botonbuscador {
-  height: 50px;
+  display: none;
+}
+
+label.search-icon {
+  position: relative;
+  margin-right: 1em;
+}
+
+label.search-icon:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+  background: url(../search-icon.jpg) center / contain no-repeat;
+}
+
+label.search-icon input {
+  padding: 10px 30px;
+}
+
+main div ul {
+  width: 70%;
 }
 
 /* PAGINA DE DETALLE */
@@ -173,25 +227,37 @@ div.container_detalle_serie{
   flex-direction: column;
   align-items: center;
 }
+div.container_detalle_serie div {
+  margin: 10px
+}
 
 div.poster_serie{
   width: 40vw;
 }
 
+div.poster_serie img {
+  display: block;
+  margin: 0 auto;
+  max-width: 75%;
+}
+
 div.titulo_serie{
   font-weight: bold;
-  font-size: xx-large;
+  font-size: 3em;
 }
-button.favoritos{
-height: 60px;
-border-radius: 10px;
-margin-top: 20px;
-font-size: 20px;
-background-color: #bfbfbf;
-border: solid black 1px;
+
+button.favoritos {
+  height: 60px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+  background-color: black;
+  border: solid 1px white;
+  color: white;
 }
+
 button.favoritos:hover{
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 div.trailer_serie{
@@ -200,20 +266,19 @@ div.trailer_serie{
 }
 
 button#boton_recomendaciones{
-
-  border-radius: 10px;
   height: 60px;
   border-radius: 10px;
-  margin-top: 20px;
   font-size: 20px;
   margin-left: 40%;
-  margin-bottom: 20px;
-  background-color: #bfbfbf;
-  border: solid black 1px;
+  background-color: black;
+  border: solid  1px white;
+  color: white;
+  display: block;
+  margin: 20px auto;
 }
 
 button#boton_recomendaciones:hover{
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 div.genero_serie{
   font-style: italic;
@@ -255,34 +320,45 @@ h1#lo_buscado {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-margin-top: 30px;
-align-items: center;
-align-content: center;
-margin-left: 10px;
-
+  margin-top: 30px;
+  align-items: center;
+  align-content: center;
+  margin-left: 10px;
 }
 
 form div {
   width: 23vw;
-align-items: center;
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-align-items: center;
-text-align: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+main form div select {
+  border-radius: 10px;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+main form.uk-form-stacked {
+  height: 45vh;
+}
+
+main form div h1 {
+  font-size: 2em;
 }
 
 select.generoaño{
-  margin-top: 49px;
   height: 25px;
   width: 80px;
 
 }
 
 select.generoorden{
-  margin-top: 49px;
   height: 25px;
-
 }
 
 select.generodescartado{
@@ -301,10 +377,16 @@ button.buscadoravanzado{
   margin: auto;
   margin-top: 90px;
   margin-bottom: 30px;
-height: 30px;
-border-radius: 10px;
-font-size: 17px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 17px;
+  background:black;
+  color: white;
+  border: 1px solid white;
+}
 
+button.buscadoravanzado:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 <<<<<<< Updated upstream
 s
@@ -336,11 +418,56 @@ h1#muestraseriesfavoritas{
   color: white;
   margin: 0px;
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
 }
 
 
 
 
+
+
 /*RESPONSIVE*/
+
+@media (max-width:480px) {
+  div.container_detalle_serie{
+    width: 100%;
+  }
+
+  div.poster_serie{
+    width: 90vw;
+    margin-top: 10px;
+  }
+
+  div.contenedor{
+    flex-direction: row;
+    width: 100vw;
+    margin: 0 auto;
+  }
+   div.trailer_serie{
+     display: none;
+   }
+=======
+@media (max-width:480px) {
+>>>>>>> Stashed changes
+div.container_detalle_serie{
+  width: 100vw;
+}
+
+div.poster_serie{
+  width: 90vw;
+  margin-top: 10px;
+}
+
+div.contenedor{
+  flex-direction: row;
+  width: 100vw;
+  margin: 0 auto;
+
+}
+
+div.trailer_serie{
+  display: none;
+}
+
