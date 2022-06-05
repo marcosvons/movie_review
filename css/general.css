@@ -4,10 +4,19 @@
   font-size: 13px;
 }
 
+html, body {
+  min-height: 100vh;
+}
+
 body{
   background-color: black;
   list-style: none;
 }
+
+body.full-page {
+  height: 100%;
+}
+
 div.uk-fkex{
   margin-bottom: 20px;
 }
@@ -62,6 +71,10 @@ div.uk-position-relative{
   display: flex;
 }
 
+div.series_favoritas {
+  justify-content: center;
+}
+
 footer{
   background-color: black;
   display: flex;
@@ -71,6 +84,11 @@ footer{
 
 }
 
+footer.bottom {
+  width: 100%;
+  position: relative;
+  bottom: 0%;
+}
 
 div.integrantes{
   width: 70%;
@@ -228,7 +246,7 @@ div.container_detalle_serie{
   align-items: center;
 }
 div.container_detalle_serie div {
-  margin: 10px
+  margin: 10px 0;
 }
 
 div.poster_serie{
@@ -262,7 +280,14 @@ button.favoritos:hover{
 
 div.trailer_serie{
   margin-top: 10px;
+  width: inherit;
+  text-align: center;
+}
 
+iframe {
+  aspect-ratio: 16 / 9;
+  height: 100%;
+  width: 100%;
 }
 
 button#boton_recomendaciones{
@@ -287,12 +312,10 @@ div.genero_serie{
 /* PAGINA DE SERIES POR GENEROS */
 
 div#nombreDelGenero{
-
   font-size:30px;
   background-color: black;
-
-color: white;
-display: flex;
+  color: white;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -363,13 +386,10 @@ select.generoorden{
 
 select.generodescartado{
 height: 25px;
-
 }
 
 select.generoelegido{
 height: 25px;
-
-
 }
 
 button.buscadoravanzado{
@@ -388,12 +408,6 @@ button.buscadoravanzado{
 button.buscadoravanzado:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-<<<<<<< Updated upstream
-s
-=======
-
->>>>>>> Stashed changes
-
 
 /* PAGINA DE FAVORITOS */
 
@@ -428,29 +442,31 @@ h1#muestraseriesfavoritas{
 
 
 
-/*RESPONSIVE*/
+/*RESPONSIVE TABLETS*/
 
-@media (max-width:480px) {
-  div.container_detalle_serie{
+@media only screen and (min-width: 480px) and (max-width:768px) {
+
+  body.full-page {
+    height: 100vh;
+  }
+
+  nav ul{
     width: 100%;
+    justify-content: space-evenly;
   }
 
-  div.poster_serie{
-    width: 90vw;
-    margin-top: 10px;
+  nav {
+    width: 60%;
   }
 
-  div.contenedor{
-    flex-direction: row;
-    width: 100vw;
-    margin: 0 auto;
+  form.buscador {
+    width: 20%;
   }
-   div.trailer_serie{
-     display: none;
-   }
-=======
-@media (max-width:480px) {
->>>>>>> Stashed changes
+
+
+
+@media only screen and (max-width:480px) {
+
 div.container_detalle_serie{
   width: 100vw;
 }
@@ -464,10 +480,9 @@ div.contenedor{
   flex-direction: row;
   width: 100vw;
   margin: 0 auto;
-
 }
 
 div.trailer_serie{
   display: none;
 }
-
+}}
