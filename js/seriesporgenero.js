@@ -24,7 +24,7 @@ window.onload=function(){
     console.log(seriesGeneros);
     for (var i = 0; i < seriesGeneros.genres.length; i++) {
       if (query == seriesGeneros.genres[i].id) {
-      document.querySelector("#nombreDelGenero").innerHTML = "El genero que elegiste es: " + seriesGeneros.genres[i].name
+      document.querySelector("#nombreDelGenero").innerHTML = "Genero elegido: " + seriesGeneros.genres[i].name
       }
 
       }})

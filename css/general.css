@@ -114,6 +114,11 @@ main {
 
 /* PAGINA DE INCIO */
 
+  ul.uk-slider-items li{
+    width: 18%;
+    margin: 5px 10px
+  }
+ 
 h1.titulosincio{
   background-color: black;
   margin: 20px;
@@ -220,9 +225,6 @@ label.search-icon input {
   padding: 10px 30px;
 }
 
-main div ul {
-  width: 70%;
-}
 
 /* PAGINA DE DETALLE */
 
@@ -411,78 +413,124 @@ button.buscadoravanzado:hover {
 
 /* PAGINA DE FAVORITOS */
 
+div.series_favoritas {
+  width: 100vw;
+}
+
 ul#seriesFavoritas {
   display: flex;
   flex-wrap: wrap;
   margin-left: 0px;
   padding-left: 0px;
   list-style: none;
-}
-
-ul#seriesFavoritas li {
-  width: 25%;
-  text-decoration: none;
-}
-
-
-/* PAGINA DE FAVORITOS */
-
-h1#muestraseriesfavoritas{
-  background-color: black;
-  color: white;
-  margin: 0px;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 2em;
+  width: 95%;
 }
 
-
-
-
-
-
-/*RESPONSIVE TABLETS*/
-
-@media only screen and (min-width: 480px) and (max-width:768px) {
-
-  body.full-page {
-    height: 100vh;
-  }
-
-  nav ul{
-    width: 100%;
-    justify-content: space-evenly;
-  }
-
-  nav {
-    width: 60%;
-  }
-
-  form.buscador {
+  ul#seriesFavoritas li {
     width: 20%;
+    text-decoration: none;
+    margin: 15px;
+  }
+
+  h1#muestraseriesfavoritas {
+    background-color: black;
+    color: white;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+  }
+
+  a.oculto {
+    display: none;
   }
 
 
+/*Responsive Mobile*/
 
 @media only screen and (max-width:480px) {
 
-div.container_detalle_serie{
-  width: 100vw;
-}
+  header {
+    justify-content: space-between;
+  }
 
-div.poster_serie{
-  width: 90vw;
-  margin-top: 10px;
-}
+  div.header {
+    order: 1;
+    width: 30%;
+  }
 
-div.contenedor{
-  flex-direction: row;
-  width: 100vw;
-  margin: 0 auto;
-}
+  form.buscador {
+    order: 2;
+  }
 
-div.trailer_serie{
-  display: none;
+  header nav {
+    order: 3;
+    width: 100%;
+  }
+
+  header nav ul {
+    justify-content: space-around;
+  }
+
+  h1#muestraseriesfavoritas {
+    margin: 10px 0px;
+  }
+
+  div.logoTMDB {
+    width: 20%;
+  }
+
+  main div ul {
+    width: 90vw;
+  }
+
+  div.series_favoritas ul {
+    justify-content: space-between;
+    width: 100vw;
+  }
+
+  ul#seriesFavoritas li {
+    width: 30vw;
+    margin: 1.1vw;
+  }
+
+  a.oculto {
+    display: none;
+  }
+
+  main form div {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  button.buscadoravanzado {
+    margin-top: 20px;
+  }
+
+  div.uk-dropdown {
+    width: inherit;
+  }
+
+  form.uk-form-stacked {
+    margin-bottom: 50px;
+  }
+
+  div.detalle {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  div.poster_serie, div.container_detalle_serie {
+    width: 90vw;
+  }
+
+  div.titulo_serie, div.sinopsis_serie {
+    text-align: center;
+  }
+
+  div#nombreDelGenero {
+    text-align: center;
+  }
 }
-}}

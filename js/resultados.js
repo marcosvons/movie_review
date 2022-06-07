@@ -42,7 +42,7 @@ window.onload=function(){
 
        //QUE SE BUSCO
 
-  document.querySelector('#lo_buscado').innerHTML = "Has buscado: " + query
+  document.querySelector('#lo_buscado').innerHTML = "Resultados de: " + query
 
 
 
